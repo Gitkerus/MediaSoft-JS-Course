@@ -1,0 +1,19 @@
+{
+  "notebooks": [
+    {
+      "id": 1,
+      "name": "notebook1",
+      "price": 10000
+    },
+    {
+      "id": 2,
+      "name": "notebook2",
+      "price": 12000
+    },
+    {
+      "id": 31,
+      "name": "notebook3",
+      "price": 15000
+    }
+  ]
+}

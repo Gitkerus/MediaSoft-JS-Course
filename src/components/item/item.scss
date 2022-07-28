@@ -1,0 +1,47 @@
+.item {
+  width: 150px;
+  height: 200px;
+  border: 1px solid rgb(186, 183, 183);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+
+  &:hover {
+    border-color: black;
+  }
+
+  & > span {
+    display: block;
+  }
+
+  &__name {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__price {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  &__add-button {
+    outline: none;
+    border: none;
+    background-color: #7748e4;
+    padding: 5px;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #14d0da;
+    }
+  }
+
+  &__img {
+    width: 100px;
+    height: auto;
+  }
+}
