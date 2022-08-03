@@ -5,23 +5,17 @@ import ItemsList from "./components/items-list";
 import "./index.scss";
 import "normalize.css";
 
-const mocks = [
-  {
-    id: 1,
-    name: "notebook1",
-    price: 10000,
-  },
-  {
-    id: 2,
-    name: "notebook2",
-    price: 12000,
-  },
-  {
-    id: 3,
-    name: "notebook3",
-    price: 15000,
-  },
-];
+
+const url = "http://localhost:3000/notebooks";
+
+
+const getData = async() => {
+  const resp = await fetch(url);
+  const data = await resp.json();
+  return data;
+};
+
+// const mocks = [];
 
 let cart = [];
 
@@ -30,10 +24,10 @@ const { CartElement, updateCart } = Cart(cart);
 
 document.body.appendChild(itemsList);
 
-const generateItems = () => {
+const generateItems = async() => {
+  const mocks = await getData();
   mocks.forEach((item) => {
     const onAdd = () => {
-      //   console.log("item added", item.id);
       cart.push(item);
       updateCart(cart);
     };
