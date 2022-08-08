@@ -2,18 +2,53 @@
   "notebooks": [
     {
       "id": 1,
-      "name": "notebook1",
-      "price": 10000
+      "name": "Samsung1",
+      "price": 30000
     },
     {
       "id": 2,
-      "name": "notebook2",
-      "price": 12000
+      "name": "Samsung2",
+      "price": 9000
     },
     {
       "id": 3,
-      "name": "notebook3",
-      "price": 15000
+      "name": "Samsung3",
+      "price": 13000
+    },
+    {
+      "id": 4,
+      "name": "Dexp1",
+      "price": 21000
+    },
+    {
+      "id": 5,
+      "name": "Dexp2",
+      "price": 10000
+    },
+    {
+      "id": 6,
+      "name": "Dexp3",
+      "price": 30000
+    },
+    {
+      "id": 7,
+      "name": "MSI1",
+      "price": 19000
+    },
+    {
+      "id": 8,
+      "name": "MSI2",
+      "price": 22000
+    },
+    {
+      "id": 9,
+      "name": "MSI3",
+      "price": 11000
+    },
+    {
+      "id": 10,
+      "name": "Mac",
+      "price": 20000
     }
   ]
 }
