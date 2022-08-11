@@ -1,4 +1,4 @@
-export const createRequest = () => {
+export const createRequest = (inputValue, sortPrice) => {
   const queryParams = {};
   if (inputValue !== "") {
     queryParams.name_like = `${inputValue}`;

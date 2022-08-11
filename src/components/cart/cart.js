@@ -28,8 +28,6 @@ const Cart = (cart) => {
     priceElement.innerText = `Сумма: ${sum}`;
     cartModalCounter.innerText = `Кол-во товаров: ${newCart.length}`;
     cartModalSum.innerText = `Сумма: ${sum}`;
-    // const sumPrice = newCart.reduce((sum, item) => sum + item.price, 0);
-    // priceElement.innerText = `Сумма: ${sumPrice}`;
     generateCart(item);
   };
 
