@@ -5,30 +5,14 @@ import SearchFilters from "./components/search-filters/search-filters";
 
 import { getData } from "./components/api/getData";
 import { createRequest } from "./components/api/createRequest";
+import { sort, del } from "./components/functions/functions";
 
 import "./index.scss";
 import "normalize.css";
 
 let inputValue = "";
 let sortPrice = "";
-
-const sort = (sortPrice) => {
-  if (sortPrice === "") {
-    sortPrice = "asc";
-  } else if (sortPrice === "asc") {
-    sortPrice = "desc";
-  } else {
-    sortPrice = "";
-  }
-};
-
-const del = () => {
-  var parent = document.querySelector(".items-list");
-  while (parent.firstChild) {
-    parent.removeChild(parent.lastChild);
-  }
-  generateItems();
-};
+let cart = [];
 
 const sorting = () => {
   sort();
@@ -38,8 +22,6 @@ const searching = () => {
   inputValue = document.querySelector(".search-filters__input").value;
   del();
 };
-
-let cart = [];
 
 const itemsList = ItemsList();
 const searchFilters = SearchFilters(sorting, searching);
